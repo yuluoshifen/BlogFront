@@ -1,12 +1,15 @@
 <template>
   <div class="hello">
-    <div>
+    <div class="top">
       <div class="nav">
+        <div class="logo">
+          <a href="#">
+            <img src="../image/logo.png" alt />
+          </a>
+        </div>
         <ul>
           <li>
-            <a href="#">
-              <img src="../image/logo.png" alt />
-            </a>
+            <a href="#">首页</a>
           </li>
           <li>
             <a href="#">学习心得</a>
@@ -21,6 +24,9 @@
             <a href="#">畅所欲言</a>
           </li>
         </ul>
+        <div class="search">
+          <input type="text" placeholder="搜索">
+        </div>
       </div>
     </div>
   </div>
@@ -38,8 +44,3 @@ export default {
   }
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>

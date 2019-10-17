@@ -2,6 +2,10 @@
   <div id="app">
     <router-view/>
     <Header/>
+    <div class="content">
+      <Article/>
+      <Sidebar/>
+    </div>
   </div>
 </template>
 
@@ -9,6 +13,8 @@
 
 import Store from './storage'
 import Header from './components/header'
+import Sidebar from './components/sidebar'
+import Article from './view/article'
 export default {
   name: 'App',
   data () {
@@ -46,7 +52,9 @@ export default {
     }
   },
   components: {
-    Header
+    Header,
+    Sidebar,
+    Article
   },
   event: {
     newComponentEvent: function (msg) {

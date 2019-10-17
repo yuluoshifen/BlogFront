@@ -7,6 +7,8 @@ import App from './App.vue'
 // import router from './router'
 // css
 import '@/style/index.scss'
+//引入font-awesome
+import 'font-awesome/css/font-awesome.min.css'
 
 Vue.use(ElementUI)
 
