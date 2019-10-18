@@ -1,76 +1,64 @@
 .article {
     width: 68%;
     float: left;
-    .bread {
-        padding: 10px;
-        font-size: 13px;
-        a {
-            color: #777;
-        }
-        a:hover {
-            color: rgba(0,0,0,.95);
+    padding: 0 40px;
+    border: 1px solid #e3eaef;
+    border-top: 4px solid $theme-color;
+    border-radius: 5px;
+    background: #fff;
+    .a_item {
+        border-bottom: 1px solid #e3eaef;
+    }
+    .a_title {
+        p {
+            padding: 15px 0;
+            font-size: 20px;
+            a {
+                color: #515151;
+            }
         }
     }
-    .a_list {
-        padding: 0 20px;
-        border: 1px solid #e3eaef;
-        border-top: 4px solid $theme-color;
-        border-radius: 5px;
-        background: #fff;
-        .a_item {
-            border-bottom: 1px solid #e3eaef;
-        }
-        .a_title {
-            p {
-                padding: 20px 0;
-                font-size: 24px;
-                a {
-                    color: #1c1c1c;
-                }
+    .a_content {
+        .a_left {
+            width: 20%;
+            float: left;
+            img {
+                height: auto;
             }
         }
-        .a_content {
-            .a_left {
-                width: 25%;
-                float: left;
-                img {
-                    height: auto;
-                }
-            }
-            .a_right {
-                width: 73%;
-                float: right;
-                color: #777;
+        .a_right {
+            width: 78%;
+            float: right;
+            color: #777;
+            font-size: 14px;
+            .a_description {
                 font-size: 14px;
-                .a_description {
-                    font-size: 14px;
-                    line-height: 25px;
-                }
+                line-height: 25px;
             }
         }
-        .a_item_bottom {
-            margin: 10px 0;
-            .a_tag {
-                float: left;
-                span {
-                    font-size: 13px;
-                    display: inline-block;
-                    color: #409eff;
-                    padding: 2px 5px;
-                    margin-right: 10px;
-                    border: 1px solid #d9ecff;
-                    background-color: #ecf5ff;
-                }
+    }
+    .a_item_bottom {
+        margin: 10px 0;
+        .a_tag {
+            float: left;
+            span {
+                font-size: 13px;
+                display: inline-block;
+                color: #409eff;
+                padding: 2px 5px;
+                margin-right: 10px;
+                border: 1px solid #d9ecff;
+                background-color: #ecf5ff;
             }
-            .a_detail {
+        }
+        .a_detail {
+            float: right;
+            height: 20px;
+            div {
                 float: right;
-                height: 20px;
-                div {
-                    float: right;
-                    font-size: 15px;
-                    margin-right: 20px;
-                    color: #AAA;
-                }
+                font-size: 15px;
+                margin-right: 20px;
+                color: #AAA;
             }
         }
     }

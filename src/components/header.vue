@@ -1,7 +1,7 @@
 <template>
-  <div class="hello">
-    <div class="top">
-      <div class="nav">
+  <div class="header">
+    <header>
+      <nav class="nav">
         <div class="logo">
           <a href="#">
             <img src="../image/logo.png" alt />
@@ -27,8 +27,8 @@
         <div class="search">
           <input type="text" placeholder="搜索">
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   </div>
 </template>
 

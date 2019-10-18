@@ -3,7 +3,9 @@
     <router-view/>
     <Header/>
     <div class="content">
-      <Article/>
+      <!-- <Bread/> -->
+      <!-- <Article/> -->
+      <Info/>
       <Sidebar/>
     </div>
   </div>
@@ -14,7 +16,9 @@
 import Store from './storage'
 import Header from './components/header'
 import Sidebar from './components/sidebar'
+import Bread from './components/bread'
 import Article from './view/article'
+import Info from './view/info'
 export default {
   name: 'App',
   data () {
@@ -54,7 +58,9 @@ export default {
   components: {
     Header,
     Sidebar,
-    Article
+    Bread,
+    Article,
+    Info
   },
   event: {
     newComponentEvent: function (msg) {
