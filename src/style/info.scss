@@ -1,0 +1,150 @@
+.info {
+    width: 68%;
+    float: left;
+    padding: 0 40px;
+    border: 1px solid #e3eaef;
+    border-top: 4px solid $theme-color;
+    border-radius: 5px;
+    background: #fff;
+    .i_info {
+        width: 100%;
+        .i_title {
+            margin: 20px 0 5px 0;
+            font-size: 24px;
+            text-align: center;
+        }
+        .i_detail {
+            height: 25px;
+            font-size: 13px;
+            padding-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #e3eaef;
+            div {
+                float: left;
+                margin-right: 20px;
+                color: #AAA;
+            }
+        }
+        .i_content {
+            padding: 20px;
+            p {
+                font-size: 14px;
+                line-height: 25px;
+                text-indent:2em;
+            }
+        }
+        .i_page {
+            height: 18px;
+            margin: 10px 0;
+            font-size: 13px;
+            div {
+                width: 200px;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+                a {
+                    color: #AAA;
+                }
+            }
+            .i_prev {
+                float: left;
+            }
+            .i_next {
+                float: right;
+            }
+        }
+        .do_comment {
+            height: 115px;
+            // padding-bottom: 10px;
+            // border-bottom: 1px solid rgba(34,36,38,0.15);
+            textarea {
+                width: 100%;
+                height: 80px;
+                padding: 10px;
+                color: #636b6f;
+                border: 1px solid rgba(34,36,38,0.15);
+                border-radius: 5px;
+            }
+            #comment {
+                cursor: pointer;
+                width: 60px;
+                height: 30px;
+                float: right;
+                font-size: 15px;
+                border-radius: 4px;
+                border: 1px solid #7ecaff;
+                color: #ecf5ff;
+                background-color: #409eff;
+            }
+        }
+    }
+    .i_comments {
+        margin-top: 50px;
+        .i_c_total {
+            height: 30px;
+            border-bottom: 1px solid #e3eaef;
+            .i_c_title {
+                float: left;
+                font-size: 20px;
+            }
+            .i_c_num {
+                float: right;
+                font-size: 15px;
+            }
+        }
+        .i_c_item {
+            padding: 10px;
+            border-bottom: 1px solid #e3eaef;
+            .i_c_info {
+                height: 40px;
+                line-height: 30px;
+                font-size: 13px;
+                .i_c_user {
+                    float: left;
+                    a {
+                        display: inline-block;
+                        margin-right: 10px;
+                        float: left;
+                    }
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 4px;
+                    }
+                    .i_c_name {
+                        font-size: 13px;
+                        color: #777;
+                    }
+                }
+                .i_c_time {
+                    float: right;
+                }
+            }
+            .i_c_content {
+                font-size: 14px;
+                line-height: 25px;
+                text-indent:2em;
+            }
+            .i_c_detail {
+                width: 100%;
+                height: 20px;
+                margin: 5px 0;
+                div {
+                    cursor: pointer;
+                    float: right;
+                    margin-left: 20px;
+                    font-size: 13px;
+                    color: #AAA;
+                }
+            }
+            .i_c_son_item {
+                width: 95%;
+                float: right;
+                padding-top: 10px;
+                border-top: 1px solid #e3eaef;
+            }
+        }
+    }
+}
