@@ -4,8 +4,8 @@
     <Header/>
     <div class="content">
       <!-- <Bread/> -->
-      <!-- <Article/> -->
-      <Info/>
+      <Article/>
+      <!-- <Info/> -->
       <Sidebar/>
     </div>
   </div>
