@@ -1,0 +1,67 @@
+.comment {
+    margin-top: 50px;
+    .i_c_total {
+        height: 30px;
+        border-bottom: 1px solid #e3eaef;
+        .i_c_title {
+            float: left;
+            font-size: 20px;
+        }
+        .i_c_num {
+            float: right;
+            font-size: 15px;
+        }
+    }
+    .i_c_item {
+        padding: 10px;
+        border-bottom: 1px solid #e3eaef;
+        .i_c_info {
+            height: 40px;
+            line-height: 30px;
+            font-size: 13px;
+            .i_c_user {
+                float: left;
+                a {
+                    display: inline-block;
+                    margin-right: 10px;
+                    float: left;
+                }
+                img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 4px;
+                }
+                .i_c_name {
+                    font-size: 13px;
+                    color: #777;
+                }
+            }
+            .i_c_time {
+                float: right;
+            }
+        }
+        .i_c_content {
+            font-size: 14px;
+            line-height: 25px;
+            text-indent:2em;
+        }
+        .i_c_detail {
+            width: 100%;
+            height: 20px;
+            margin: 5px 0;
+            div {
+                cursor: pointer;
+                float: right;
+                margin-left: 20px;
+                font-size: 13px;
+                color: #AAA;
+            }
+        }
+        .i_c_son_item {
+            width: 95%;
+            float: right;
+            padding-top: 10px;
+            border-top: 1px solid #e3eaef;
+        }
+    }
+}

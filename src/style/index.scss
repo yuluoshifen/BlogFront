@@ -56,6 +56,15 @@ body {
 
 $theme-color: #7ecaff;
 
+header {
+  height: 60px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  border-top: 5px solid $theme-color;
+  background: #fff;
+  box-shadow: 0 1px 11px 2px rgba(42,42,42,.1);
+}
+
 .content {
     width: 1200px!important;
     height: 500px;
@@ -67,3 +76,5 @@ $theme-color: #7ecaff;
 @import "./article.scss";
 @import "./bread.scss";
 @import "./info.scss";
+@import "./comment.scss";
+@import "./message.scss";

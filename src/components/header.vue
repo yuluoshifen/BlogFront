@@ -9,19 +9,19 @@
         </div>
         <ul>
           <li>
-            <a href="#">首页</a>
+            <router-link to="/">首页</router-link>
           </li>
           <li>
-            <a href="#">学习心得</a>
+            <router-link to="/study">学习心得</router-link>
           </li>
           <li>
-            <a href="#">生活随笔</a>
+            <router-link to="/life">生活随笔</router-link>
           </li>
           <li>
-            <a href="#">游玩攻略</a>
+            <router-link to="/play">游玩攻略</router-link>
           </li>
           <li>
-            <a href="#">畅所欲言</a>
+            <router-link to="/message">畅所欲言</router-link>
           </li>
         </ul>
         <div class="search">
@@ -36,16 +36,24 @@
 export default {
   name: 'Header',
 
-  data( ) {
+  data() {
     return {
       msg: 'Welcome to Your Vue.js App',
       msg2: 'Welcome to My Vue'
     };
+  },
+
+  watch: {
+    $route (to, from) {
+      console.log(to.meta.title)
+    }
   }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
+<style>
+  .is-active {
+    background-color: rgba(0,0,0,0.03);
+    color: #409eff;
+  }
 </style>
