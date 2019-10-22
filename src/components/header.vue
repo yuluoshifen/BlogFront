@@ -25,12 +25,12 @@
           </li>
         </ul>
         <div class="about_user">
-          <a>登录</a>
+          <a @click="openLogin">登录</a>
           |
-          <a>注册</a>
+          <a @click="openRegister">注册</a>
         </div>
         <div class="search">
-          <input type="text" placeholder="搜索">
+          <input type="text" placeholder="搜索" />
         </div>
       </nav>
     </header>
@@ -38,27 +38,39 @@
 </template>
 
 <script>
+import Login from "../view/login";
+import Register from "../view/register";
 export default {
-  name: 'Header',
-
+  name: "Header",
   data() {
     return {
-      msg: 'Welcome to Your Vue.js App',
-      msg2: 'Welcome to My Vue'
+      isShowLoginDialog: false,
+      isShowRegisterDialog: false
     };
   },
-
-  watch: {
-    $route (to, from) {
-      console.log(to.meta.title)
+  methods: {
+    openLogin() {
+      this.isShowLoginDialog = true
+    },
+    openRegister() {
+      this.isShowRegisterDialog = true
     }
+  },
+  watch: {
+    $route(to, from) {
+      console.log(to.meta.title);
+    }
+  },
+  components: {
+    Login,
+    Register
   }
 };
 </script>
 
 <style>
-  .is-active {
-    background-color: rgba(0,0,0,0.03);
-    color: #409eff;
-  }
+.is-active {
+  background-color: rgba(0, 0, 0, 0.03);
+  color: #409eff;
+}
 </style>
