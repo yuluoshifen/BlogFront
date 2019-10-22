@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <Header/>
+    <Register/>
+    <!-- <Header/>
     <div class="content">
       <router-view/>
       <Sidebar/>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 
 import Store from './storage'
+import Login from './view/login'
+import Register from './view/register'
 import Header from './components/header'
 import Sidebar from './components/sidebar'
 export default {
@@ -50,6 +53,8 @@ export default {
   //   }
   // },
   components: {
+    Login,
+    Register,
     Header,
     Sidebar
   },

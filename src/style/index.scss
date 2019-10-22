@@ -71,10 +71,10 @@ header {
     margin: 0 auto;
 }
 
+@import "./login.scss";
 @import "./header.scss";
 @import "./sidebar.scss";
 @import "./article.scss";
 @import "./bread.scss";
 @import "./info.scss";
 @import "./comment.scss";
-@import "./message.scss";
