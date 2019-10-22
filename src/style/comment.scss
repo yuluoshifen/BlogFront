@@ -21,19 +21,22 @@
             font-size: 13px;
             .i_c_user {
                 float: left;
+                margin-right: 10px;
                 a {
-                    // display: inline-block;
-                    margin-right: 10px;
                     float: left;
                 }
                 img {
                     width: 30px;
                     height: 30px;
+                    margin-right: 10px;
                     border-radius: 4px;
                 }
                 .i_c_name {
                     font-size: 13px;
                     color: #777;
+                }
+                .i_c_user_text {
+                    font-size: 12px;
                 }
             }
             .i_c_time {

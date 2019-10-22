@@ -24,6 +24,11 @@
             <router-link to="/message">畅所欲言</router-link>
           </li>
         </ul>
+        <div class="about_user">
+          <a>登录</a>
+          |
+          <a>注册</a>
+        </div>
         <div class="search">
           <input type="text" placeholder="搜索">
         </div>

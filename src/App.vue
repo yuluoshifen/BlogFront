@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <Register/>
-    <!-- <Header/>
+    <Header/>
     <div class="content">
-      <router-view/>
+      <!-- <router-view/> -->
+      <User/>
       <Sidebar/>
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -14,6 +14,8 @@
 import Store from './storage'
 import Login from './view/login'
 import Register from './view/register'
+import User from './view/user'
+import Password from './view/password'
 import Header from './components/header'
 import Sidebar from './components/sidebar'
 export default {
@@ -55,6 +57,8 @@ export default {
   components: {
     Login,
     Register,
+    User,
+    Password,
     Header,
     Sidebar
   },

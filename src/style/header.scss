@@ -52,4 +52,18 @@ nav {
       outline:none;
     }
   }
+  .about_user {
+    float: right;
+    margin: 0 30px;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #777;
+    a {
+      cursor: pointer;
+    }
+    a:hover {
+      color: #409eff;
+    }
+  }
 }
