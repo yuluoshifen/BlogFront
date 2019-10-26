@@ -1,5 +1,5 @@
 <template>
-  <div class="login" v-if="showLogin">
+  <div class="login">
     <div class="login_inside">
       <div class="l_login_text">
         <h2>登录</h2>
@@ -34,15 +34,6 @@
 
 <script>
 export default {
-  name: "Login",
-  props: {
-    isShowLoginDialog: {
-      type: Boolean,
-      default: false
-    }
-  }
-  //   components: {
-  //     Article
-  //   }
+  name: "Login"
 };
 </script>

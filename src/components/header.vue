@@ -25,9 +25,9 @@
           </li>
         </ul>
         <div class="about_user">
-          <a @click="openLogin">登录</a>
+          <a @click="openDialog('login')">登录</a>
           |
-          <a @click="openRegister">注册</a>
+          <a @click="openDialog('register')">注册</a>
         </div>
         <div class="search">
           <input type="text" placeholder="搜索" />
@@ -44,16 +44,13 @@ export default {
   name: "Header",
   data() {
     return {
-      isShowLoginDialog: false,
-      isShowRegisterDialog: false
+      showDialog: ""
     };
   },
   methods: {
-    openLogin() {
-      this.isShowLoginDialog = true
-    },
-    openRegister() {
-      this.isShowRegisterDialog = true
+    openDialog(e) {
+      this.showDialog = e;
+      this.$emit("openDialog", this.showDialog);
     }
   },
   watch: {
